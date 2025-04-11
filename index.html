@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="icon" href="/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
   <meta name="description" content="一个响应式网页">
   <title>蔷薇湖畔</title>
   <link rel="stylesheet" type="text/css" href="./css/loading.css" />
@@ -28,38 +28,45 @@
       <div class="loading loading-7"></div>
     </div>
   </div>
-  <div class="popups prompt log">
-    <div class="icon">
-      <svg t="1744304911542" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
-        p-id="7157" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
-        <path
-          d="M514.048 59.392q93.184 0 174.592 35.328t142.336 96.768 96.256 143.36 35.328 175.104-35.328 175.616-96.256 143.872-142.336 96.768-174.592 35.328-175.104-35.328-142.848-96.768-96.256-143.872-35.328-175.616 35.328-175.104 96.256-143.36 142.848-96.768 175.104-35.328zM795.648 423.936q18.432-18.432 19.456-45.568t-17.408-45.568-45.056-17.92-45.056 18.944l-288.768 288.768-99.328-98.304q-18.432-18.432-45.056-18.944t-45.056 17.92-18.944 43.52 17.92 43.52l142.336 143.36q18.432 18.432 48.128 17.92t48.128-18.944l-4.096 4.096z"
-          p-id="7158"></path>
-      </svg>
+  <div id="popups">
+    <div class="popups prompt log">
+      <div class="icon">
+        <svg t="1744304911542" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          p-id="7157" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+          <path
+            d="M514.048 59.392q93.184 0 174.592 35.328t142.336 96.768 96.256 143.36 35.328 175.104-35.328 175.616-96.256 143.872-142.336 96.768-174.592 35.328-175.104-35.328-142.848-96.768-96.256-143.872-35.328-175.616 35.328-175.104 96.256-143.36 142.848-96.768 175.104-35.328zM795.648 423.936q18.432-18.432 19.456-45.568t-17.408-45.568-45.056-17.92-45.056 18.944l-288.768 288.768-99.328-98.304q-18.432-18.432-45.056-18.944t-45.056 17.92-18.944 43.52 17.92 43.52l142.336 143.36q18.432 18.432 48.128 17.92t48.128-18.944l-4.096 4.096z"
+            p-id="7158"></path>
+        </svg>
+      </div>
+      <div class="content">log</div>
     </div>
-    <div class="content">log</div>
+    <div class="popups prompt warn">
+      <div class="icon">
+        <svg t="1744305153079" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          p-id="7310" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+          <path
+            d="M512 54.272q95.232 0 178.688 36.352t145.408 98.304 98.304 145.92 36.352 179.2-36.352 178.688-98.304 145.408-145.408 98.304-178.688 36.352-179.2-36.352-145.92-98.304-98.304-145.408-36.352-178.688 36.352-179.2 98.304-145.92 145.92-98.304 179.2-36.352zM567.296 450.56q0-24.576-15.872-41.472t-39.424-16.896-39.936 16.896-16.384 41.472l0 343.04q0 24.576 16.384 39.424t39.936 14.848 39.936-15.36 16.384-39.936zM512 323.584q29.696 0 50.688-20.992t20.992-50.688-20.992-50.688-50.688-20.992-51.2 20.992-21.504 50.688 21.504 50.688 51.2 20.992z"
+            p-id="7311"></path>
+        </svg>
+      </div>
+      <div class="content">warn</div>
+    </div>
+    <div class="popups prompt error">
+      <div class="icon">
+        <svg t="1744301001416" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7006"
+          xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+          <path
+            d="M827.392 195.584q65.536 65.536 97.792 147.456t32.256 167.936-32.256 167.936-97.792 147.456-147.456 98.304-167.936 32.768-168.448-32.768-147.968-98.304-98.304-147.456-32.768-167.936 32.768-167.936 98.304-147.456 147.968-97.792 168.448-32.256 167.936 32.256 147.456 97.792zM720.896 715.776q21.504-21.504 18.944-49.152t-24.064-49.152l-107.52-107.52 107.52-107.52q21.504-21.504 24.064-49.152t-18.944-49.152-51.712-21.504-51.712 21.504l-107.52 106.496-104.448-104.448q-21.504-20.48-49.152-23.04t-49.152 17.92q-21.504 21.504-21.504 52.224t21.504 52.224l104.448 104.448-104.448 104.448q-21.504 21.504-21.504 51.712t21.504 51.712 49.152 18.944 49.152-24.064l104.448-104.448 107.52 107.52q21.504 21.504 51.712 21.504t51.712-21.504z"
+            p-id="7007"></path>
+        </svg>
+      </div>
+      <div class="content">error</div>
+    </div>
   </div>
-  <div class="popups prompt warn">
-    <div class="icon">
-      <svg t="1744305153079" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
-        p-id="7310" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
-        <path
-          d="M512 54.272q95.232 0 178.688 36.352t145.408 98.304 98.304 145.92 36.352 179.2-36.352 178.688-98.304 145.408-145.408 98.304-178.688 36.352-179.2-36.352-145.92-98.304-98.304-145.408-36.352-178.688 36.352-179.2 98.304-145.92 145.92-98.304 179.2-36.352zM567.296 450.56q0-24.576-15.872-41.472t-39.424-16.896-39.936 16.896-16.384 41.472l0 343.04q0 24.576 16.384 39.424t39.936 14.848 39.936-15.36 16.384-39.936zM512 323.584q29.696 0 50.688-20.992t20.992-50.688-20.992-50.688-50.688-20.992-51.2 20.992-21.504 50.688 21.504 50.688 51.2 20.992z"
-          p-id="7311"></path>
-      </svg>
-    </div>
-    <div class="content">warn</div>
-  </div>
-  <div class="popups prompt error">
-    <div class="icon">
-      <svg t="1744301001416" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7006"
-        xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
-        <path
-          d="M827.392 195.584q65.536 65.536 97.792 147.456t32.256 167.936-32.256 167.936-97.792 147.456-147.456 98.304-167.936 32.768-168.448-32.768-147.968-98.304-98.304-147.456-32.768-167.936 32.768-167.936 98.304-147.456 147.968-97.792 168.448-32.256 167.936 32.256 147.456 97.792zM720.896 715.776q21.504-21.504 18.944-49.152t-24.064-49.152l-107.52-107.52 107.52-107.52q21.504-21.504 24.064-49.152t-18.944-49.152-51.712-21.504-51.712 21.504l-107.52 106.496-104.448-104.448q-21.504-20.48-49.152-23.04t-49.152 17.92q-21.504 21.504-21.504 52.224t21.504 52.224l104.448 104.448-104.448 104.448q-21.504 21.504-21.504 51.712t21.504 51.712 49.152 18.944 49.152-24.064l104.448-104.448 107.52 107.52q21.504 21.504 51.712 21.504t51.712-21.504z"
-          p-id="7007"></path>
-      </svg>
-    </div>
-    <div class="content">error</div>
+  <div class="popups confirm">
+    <div class="title">title</div>
+    <div class="content"><span>content1</span><br /><span>content1</span><br /><span>content1</span></div>
+    <div class="button">确定</div>
   </div>
   <div class="body">
     <div class="head">
@@ -69,7 +76,7 @@
     </div>
     <div class="typelist">
       <div class="up">
-        <div class="item" onclick="popups.prompt.error('当前栏目暂不开放')">
+        <div class="item" onclick="popups.prompt.log('当前栏目暂未开放')">
           <div class="icon">
             <img src="./images/icon/arrow.png" />
             <div class="origin">
@@ -77,7 +84,7 @@
             </div>
           </div>
         </div>
-        <div class="item" onclick="popups.prompt.error('当前栏目暂不开放')">
+        <div class="item" onclick="popups.prompt.warn('当前栏目暂未开放')">
           <div class="icon">
             <img src="./images/icon/gold_ingot.png" />
             <div class="origin">
@@ -87,7 +94,7 @@
         </div>
       </div>
       <div class="middle">
-        <div class="item" onclick="popups.prompt.error('当前栏目暂不开放')">
+        <div class="item" onclick="popups.prompt.error('当前栏目暂未开放')">
           <div class="icon">
             <img src="./images/icon/book.png" />
             <div class="origin">
@@ -95,7 +102,7 @@
             </div>
           </div>
         </div>
-        <div class="item" onclick="popups.prompt.error('当前栏目暂不开放')">
+        <div class="item" onclick="popups.prompt.error('当前栏目暂未开放')">
           <div class="icon">
             <img src="./images/icon/experience_bottle.png" />
             <div class="origin">
@@ -103,9 +110,17 @@
             </div>
           </div>
         </div>
+        <div class="item" onclick="popups.prompt.error('当前栏目暂未开放')">
+          <div class="icon">
+            <img src="./images/icon/fishing_rod.png" />
+            <div class="origin">
+              奇怪的工具
+            </div>
+          </div>
+        </div>
       </div>
       <div class="low">
-        <div class="item" onclick="popups.prompt.error('当前栏目暂不开放')">
+        <div class="item" onclick="popups.prompt.error('当前栏目暂未开放')">
           <div class="icon">
             <img src="./images/icon/flower_banner_pattern.png" />
             <div class="origin">
@@ -113,7 +128,7 @@
             </div>
           </div>
         </div>
-        <div class="item" onclick="popups.prompt.error('当前栏目暂不开放')">
+        <div class="item" onclick="popups.prompt.error('当前栏目暂未开放')">
           <div class="icon">
             <img src="./images/icon/gear.png" />
             <div class="origin">

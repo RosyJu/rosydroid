@@ -12,22 +12,28 @@ const popups = {
         { once: true }
       );
     },
-    log: (text) => {
+    log: async (text) => {
+      let IDpopups = document.querySelectorAll("div#popups")[0];
       let dom = document.querySelectorAll("div.popups.prompt.log")[0];
+      IDpopups.appendChild(dom);
       dom.querySelectorAll("div.content")[0].textContent = text
       if (dom) {
         popups.prompt.animation(dom)
       }
     },
-    warn: (text) => {
+    warn: async (text) => {
+      let IDpopups = document.querySelectorAll("div#popups")[0];
       let dom = document.querySelectorAll("div.popups.prompt.warn")[0];
+      IDpopups.appendChild(dom);
       dom.querySelectorAll("div.content")[0].textContent = text
       if (dom) {
         popups.prompt.animation(dom)
       }
     },
-    error: (text) => {
+    error: async (text) => {
+      let IDpopups = document.querySelectorAll("div#popups")[0];
       let dom = document.querySelectorAll("div.popups.prompt.error")[0];
+      IDpopups.appendChild(dom);
       dom.querySelectorAll("div.content")[0].textContent = text
       if (dom) {
         popups.prompt.animation(dom)
