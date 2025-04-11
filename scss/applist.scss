@@ -1,0 +1,10 @@
+div.applist {
+  width: calc(100vw - 420px);
+  height: calc(100vh - 80px);
+  position: relative;
+  left: 80px;
+  float: left;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 1);
+}

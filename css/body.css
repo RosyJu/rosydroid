@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@font-face {
+  font-family: HarmonyOS;
+  src: url(./HarmonyOS_Sans_Medium.ttf) format("truetype");
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0px;
+}
+body div.body {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body div.body div.poetry {
+  transform: translateX(-50%);
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  bottom: 10px;
+}
+body div.body div.poetry span {
+  float: left;
+}
+body div.body div.poetry div {
+  padding: 2px 4px 2px 4px;
+  float: left;
+  left: 50%;
+  font-size: 14px;
+  text-align: center;
+  color: #535353;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
+  transition-duration: 0.5s;
+  cursor: default;
+}
+body div.body div.poetry div:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  color: #000000;
+}
+body div.body div.poetry div.content::after {
+  content: "」";
+  letter-spacing: 3px;
+}
+body div.body div.poetry div.content::before {
+  content: "「";
+  letter-spacing: 3px;
+}

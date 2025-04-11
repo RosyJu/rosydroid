@@ -1,0 +1,16 @@
+div.card {
+  width: 250px;
+  position: relative;
+  height: calc(100vh - 80px);
+  background-color: rgba(255, 255, 255, 0.5);
+  float: left;
+  left: 40px;
+  border-radius: 16px;
+  z-index: 0;
+  box-shadow: 0 0 8px rgb(255, 255, 255);
+}
+div.card div.avatar div.img img {
+  width: 64px;
+  height: 64px;
+  float: left;
+}
