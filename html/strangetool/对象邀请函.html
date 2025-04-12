@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>橘橘向你发送了一封对象邀请函</title>
+    <link rel="stylesheet" type="text/css" href="../../css/strangetool/对象邀请函.css" />
+</head>
+
+<body>
+    <!-- 粒子背景 -->
+    <div class="particles" id="particles"></div>
+
+    <!-- 鼠标跟随粒子 -->
+    <div id="mouseParticles"></div>
+
+    <!-- 爱心效果 -->
+    <div class="hearts" id="hearts"></div>
+
+    <!-- 主内容 -->
+    <div class="content" id="mainContent">
+        <h1 class="title">橘橘向你发送了一封对象邀请函</h1>
+        <h2 class="subtitle">橘橘希望你成为ta的对象,是否接受?</h2>
+
+        <figure class="boi" style="--happiness:0.9; --derp:1; --px:0.5; --py:0.5;">
+            <div class="boi-blush boi-blush-left"></div>
+            <div class="boi-blush boi-blush-right"></div>
+            <div class="boi-eye boi-eye-left"></div>
+            <div class="boi-eye boi-eye-right"></div>
+            <div class="boi-mouth"></div>
+        </figure>
+
+        <div class="buttons">
+            <button class="button button-accept" id="btnAccept">接受</button>
+            <button class="button button-reject" id="btnReject">拒绝</button>
+        </div>
+    </div>
+
+    <!-- 接受消息 -->
+    <div class="message" id="acceptedMessage">
+        <h2 class="message-title">恭喜你们成为对象!</h2>
+        <p class="message-subtitle">橘橘非常开心,祝你们幸福快乐！</p>
+        <button class="message-button" id="btnBackFromAccept">返回</button>
+    </div>
+
+    <!-- 拒绝消息 -->
+    <div class="message" id="rejectedMessage">
+        <h2 class="message-title">橘橘有点难过...</h2>
+        <p class="message-subtitle">但橘橘尊重你的决定,祝你一切顺利！</p>
+        <button class="message-button" id="btnBackFromReject">返回</button>
+    </div>
+    <script type="text/javascript" src="../../javascript/strangetool/对象邀请函.js"></script>
+</body>
+
+</html>

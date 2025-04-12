@@ -188,19 +188,21 @@ let seed;
 
 function Fdate() {
   // 计算时间戳起点终点时间段的时间戳差距
-  const start = 1729869000; // 2024.12.25T23:10+0800
+  const start = 1729785600; // 2024.12.25T23:10+0800
   let end = Math.floor(Date.now() / 1000);
   let TimePeriod = end - start; // 差距
   // 计算单位时间差
-  let day = Math.floor(TimePeriod / 86400); // 天
+  let day = Math.floor(TimePeriod / 86400) - 1; // 天
   // 页面插入已完成的时间
-  seed = day + 15;
+  seed = day;
   dateday.textContent = day;
   return Fdate;
 }
 
 const identity = [
-  ["小女子", "小生"],
+  ["大哥", "小弟"],
+  ["小弟", "大哥"],
+  ["小宝", "大宝"],
   ["爱妃", "皇上"],
   ["皇上", "???"],
   ["姐姐", "???"],

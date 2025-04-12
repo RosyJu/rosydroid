@@ -7,6 +7,10 @@
   display: none;
 }
 
+img {
+  -webkit-user-drag: none;
+}
+
 body {
   transition-duration: 0.5s;
   margin: 0px;
