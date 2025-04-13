@@ -39,6 +39,13 @@ div.typelist div div.item div.icon img {
 div.typelist div div.item div.icon div.origin {
   margin: 14px auto auto 10px;
 }
+div.typelist div div.item div.icon div.origin span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  line-height: 18px;
+}
 div.typelist div div.item:hover {
   width: calc(100% + 100px);
   background-color: rgb(255, 255, 255);

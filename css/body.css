@@ -12,6 +12,7 @@ img {
 }
 
 body {
+  user-select: none;
   transition-duration: 0.5s;
   margin: 0px;
 }

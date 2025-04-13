@@ -9,8 +9,80 @@ div.card {
   z-index: 0;
   box-shadow: 0 0 8px rgb(255, 255, 255);
 }
-div.card div.avatar div.img img {
+div.card div.avatar {
+  margin-top: 32px;
+}
+div.card div.avatar div.img {
+  position: relative;
+  height: 64px;
+  text-align: center;
+}
+div.card div.avatar div.img div.head {
   width: 64px;
   height: 64px;
+  border-radius: 32px;
+  position: relative;
+  transition-duration: 0.5s;
+  box-shadow: 0 0 8px rgb(255, 255, 255);
+}
+div.card div.avatar div.img div.head img {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+}
+div.card div.avatar div.img div.left {
   float: left;
+  left: calc(50% - 96px);
+}
+div.card div.avatar div.img div.right {
+  float: right;
+  right: calc(50% - 96px);
+}
+div.card div.avatar div.img div.heart {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+}
+div.card div.avatar div.img div.heart img {
+  width: 32px;
+  height: 32px;
+  transform: scale(0);
+  transition-duration: 0.5s;
+  image-rendering: pixelated;
+  opacity: 0.7;
+}
+div.card div.avatar div.img.hover div.head {
+  box-shadow: 0 0 32px rgb(255, 255, 255);
+}
+div.card div.avatar div.img.hover div.left {
+  left: calc(50% - 64px);
+}
+div.card div.avatar div.img.hover div.right {
+  right: calc(50% - 64px);
+}
+div.card div.avatar div.img.hover div.heart img {
+  transform: scale(1);
+}
+div.card div.date {
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 70%;
+  height: 40px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgb(0, 0, 0);
+}
+div.card div.date span.text {
+  color: #AAAAAA;
+  font-size: 16px;
+}
+div.card div.date span.time {
+  color: #CECACA;
+  font-size: 24px;
 }

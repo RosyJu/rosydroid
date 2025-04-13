@@ -53,8 +53,8 @@
     </div>
     <div class="popups prompt error">
       <div class="icon">
-        <svg t="1744301001416" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7006"
-          xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+        <svg t="1744301001416" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          p-id="7006" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
           <path
             d="M827.392 195.584q65.536 65.536 97.792 147.456t32.256 167.936-32.256 167.936-97.792 147.456-147.456 98.304-167.936 32.768-168.448-32.768-147.968-98.304-98.304-147.456-32.768-167.936 32.768-167.936 98.304-147.456 147.968-97.792 168.448-32.256 167.936 32.256 147.456 97.792zM720.896 715.776q21.504-21.504 18.944-49.152t-24.064-49.152l-107.52-107.52 107.52-107.52q21.504-21.504 24.064-49.152t-18.944-49.152-51.712-21.504-51.712 21.504l-107.52 106.496-104.448-104.448q-21.504-20.48-49.152-23.04t-49.152 17.92q-21.504 21.504-21.504 52.224t21.504 52.224l104.448 104.448-104.448 104.448q-21.504 21.504-21.504 51.712t21.504 51.712 49.152 18.944 49.152-24.064l104.448-104.448 107.52 107.52q21.504 21.504 51.712 21.504t51.712-21.504z"
             p-id="7007"></path>
@@ -62,11 +62,6 @@
       </div>
       <div class="content">error</div>
     </div>
-  </div>
-  <div class="popups confirm">
-    <div class="title">title</div>
-    <div class="content"><span>content1</span><br /><span>content1</span><br /><span>content1</span></div>
-    <div class="button">确定</div>
   </div>
   <div class="body">
     <div class="head">
@@ -80,7 +75,9 @@
           <div class="icon">
             <img src="./images/icon/arrow.png" />
             <div class="origin">
-              联系我们
+              <span>
+                联系我们
+              </span>
             </div>
           </div>
         </div>
@@ -88,7 +85,9 @@
           <div class="icon">
             <img src="./images/icon/gold_coins.png" />
             <div class="origin">
-              支持我们
+              <span>
+                支持我们
+              </span>
             </div>
           </div>
         </div>
@@ -98,7 +97,9 @@
           <div class="icon">
             <img src="./images/icon/book.png" />
             <div class="origin">
-              主界面
+              <span>
+                主界面
+              </span>
             </div>
           </div>
         </div>
@@ -106,7 +107,9 @@
           <div class="icon">
             <img src="./images/icon/experience_bottle.png" />
             <div class="origin">
-              小游戏
+              <span>
+                小游戏
+              </span>
             </div>
           </div>
         </div>
@@ -114,7 +117,9 @@
           <div class="icon">
             <img src="./images/icon/fishing_rod.png" />
             <div class="origin">
-              奇怪的工具
+              <span>
+                奇怪的工具
+              </span>
             </div>
           </div>
         </div>
@@ -124,7 +129,9 @@
           <div class="icon">
             <img src="./images/icon/flower_banner_pattern.png" />
             <div class="origin">
-              给予反馈
+              <span>
+                给予反馈
+              </span>
             </div>
           </div>
         </div>
@@ -132,7 +139,9 @@
           <div class="icon">
             <img src="./images/icon/gear.png" />
             <div class="origin">
-              本地配置
+              <span>
+                本地配置
+              </span>
             </div>
           </div>
         </div>
@@ -141,10 +150,33 @@
     <div class="card">
       <div class="avatar">
         <div class="img">
-          <img id="left" src="./images/avatar/headRosyJu.webp" />
-          <img id="right" src="./images/avatar/headYYL.webp" />
+          <div class="left head">
+            <img id="left" src="./images/avatar/headRosyJu.webp" />
+          </div>
+          <div class="heart">
+            <img src="./images/avatar/heart.png" alt="heart" />
+          </div>
+          <div class="right head">
+            <img id="right" src="./images/avatar/headYYL.webp" />
+          </div>
         </div>
       </div>
+      <div class="date">
+        <span class="text">第</span>
+        <span class="time"></span>
+        <span class="text">天</span>
+      </div>
+      <!-- <div class="specialDay">
+        <div class="item">
+          <div class="title">周年</div>
+          <div class="time">
+            <span class="month time">10</span>
+            <span class="text">月</span>
+            <span class="day time">25</span>
+            <span class="text">日</span>
+          </div>
+        </div>
+      </div> -->
     </div>
     <div class="applist">
     </div>
@@ -159,6 +191,9 @@
   <script type="text/javascript" src="./javascript/title.js"></script>
   <script type="text/javascript" src="./json/applist.js"></script>
   <script type="text/javascript" src="./javascript/jinrishici.js"></script>
+  <script type="text/javascript" src="./javascript/onload.js"></script>
+  <script type="text/javascript" src="./javascript/index.js"></script>
+  <script type="text/javascript" src="./javascript/card.js"></script>
   <script type="text/javascript" src="./javascript/popups.js"></script>
   <script type="text/javascript" src="./javascript/background.js"></script>
   <script type="text/javascript" src="./javascript/loading.js"></script>
