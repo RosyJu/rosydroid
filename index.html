@@ -71,7 +71,7 @@
     </div>
     <div class="typelist">
       <div class="up">
-        <div class="item" onclick="popups.prompt.log('当前栏目暂未开放')">
+        <div class="item" onclick="pagechange(this)">
           <div class="icon">
             <img src="./images/icon/arrow.png" />
             <div class="origin">
@@ -81,7 +81,7 @@
             </div>
           </div>
         </div>
-        <div class="item" onclick="popups.prompt.warn('当前栏目暂未开放')">
+        <div class="item" onclick="pagechange(this)">
           <div class="icon">
             <img src="./images/icon/gold_coins.png" />
             <div class="origin">
@@ -93,7 +93,7 @@
         </div>
       </div>
       <div class="middle">
-        <div class="item" onclick="popups.prompt.error('当前栏目暂未开放')">
+        <div class="item" onclick="pagechange(this)">
           <div class="icon">
             <img src="./images/icon/book.png" />
             <div class="origin">
@@ -103,7 +103,7 @@
             </div>
           </div>
         </div>
-        <div class="item" onclick="popups.prompt.error('当前栏目暂未开放')">
+        <div class="item" onclick="pagechange(this)">
           <div class="icon">
             <img src="./images/icon/experience_bottle.png" />
             <div class="origin">
@@ -113,7 +113,7 @@
             </div>
           </div>
         </div>
-        <div class="item" onclick="popups.prompt.error('当前栏目暂未开放')">
+        <div class="item" onclick="pagechange(this)">
           <div class="icon">
             <img src="./images/icon/fishing_rod.png" />
             <div class="origin">
@@ -125,7 +125,7 @@
         </div>
       </div>
       <div class="low">
-        <div class="item" onclick="popups.prompt.error('当前栏目暂未开放')">
+        <div class="item" onclick="pagechange(this)">
           <div class="icon">
             <img src="./images/icon/flower_banner_pattern.png" />
             <div class="origin">
@@ -135,7 +135,7 @@
             </div>
           </div>
         </div>
-        <div class="item" onclick="popups.prompt.error('当前栏目暂未开放')">
+        <div class="item" onclick="pagechange(this)">
           <div class="icon">
             <img src="./images/icon/gear.png" />
             <div class="origin">
@@ -179,6 +179,72 @@
       </div> -->
     </div>
     <div class="applist">
+      <div class="page" id="联系我们">
+        <div class="title">联系我们</div>
+        <div class="main">
+          <div class="contact">
+            <div class="item">
+              <div class="platform">
+                QQ
+              </div>
+              <div class="content">
+                <span onclick="copy(this.textContent)">755126039</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="platform">
+                WeChat
+              </div>
+              <div class="content">
+                <span onclick="copy(this.textContent)">Rosy_Ju</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="platform">
+                Email
+              </div>
+              <div class="content">
+                <span onclick="copy(this.textContent)">755126039@qq.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="source">
+            <div class="title">
+              本项目制作参考以下项目代码
+            </div>
+            <div class="item">
+              <a href="https://github.com/kcabx/Il" target="_blank">Il</a>
+              <div class="content">
+                <span>https://github.com/kcabx/Il</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="支持我们">
+        <div class="title">支持我们</div>
+        2
+      </div>
+      <div class="page app" id="主界面">
+        <div class="title">主界面</div>
+        3
+      </div>
+      <div class="page app" id="小游戏">
+        <div class="title">小游戏</div>
+        4
+      </div>
+      <div class="page app" id="奇怪的工具">
+        <div class="title">奇怪的工具</div>
+        5
+      </div>
+      <div class="page" id="给予反馈">
+        <div class="title">给予反馈</div>
+        6
+      </div>
+      <div class="page" id="本地配置">
+        <div class="title">本地配置</div>
+        7
+      </div>
     </div>
     <div class="poetry">
       <div class="origin">正在加载标题......</div>
@@ -189,13 +255,15 @@
     </div>
   </div>
   <script type="text/javascript" src="./javascript/title.js"></script>
+  <script type="text/javascript" src="./javascript/background.js"></script>
   <script type="text/javascript" src="./json/applist.js"></script>
   <script type="text/javascript" src="./javascript/jinrishici.js"></script>
+  <script type="text/javascript" src="./javascript/applist.js"></script>
   <script type="text/javascript" src="./javascript/onload.js"></script>
   <script type="text/javascript" src="./javascript/index.js"></script>
   <script type="text/javascript" src="./javascript/card.js"></script>
   <script type="text/javascript" src="./javascript/popups.js"></script>
-  <script type="text/javascript" src="./javascript/background.js"></script>
+  <script type="text/javascript" src="./javascript/onclick.js"></script>
   <script type="text/javascript" src="./javascript/loading.js"></script>
 </body>
 

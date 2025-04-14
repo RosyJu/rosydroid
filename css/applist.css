@@ -1,3 +1,4 @@
+@charset "UTF-8";
 div.applist {
   width: calc(100vw - 420px);
   height: calc(100vh - 80px);
@@ -7,4 +8,94 @@ div.applist {
   background: rgba(255, 255, 255, 0.5);
   border-radius: 16px;
   box-shadow: 0 0 8px rgb(255, 255, 255);
+  overflow: hidden;
+  user-select: auto;
+}
+div.applist div.page {
+  height: calc(100vh - 160px);
+  width: calc(100vw - 500px);
+  margin: 40px;
+  transition: margin-top 0.5s;
+}
+div.applist div.page div.title {
+  color: #5c5c5c;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+}
+div.applist div.page[id=联系我们] div.main div.contact > div.item:first-child {
+  margin-top: 40px;
+}
+div.applist div.page[id=联系我们] div.main div.contact div.item {
+  height: 24px;
+}
+div.applist div.page[id=联系我们] div.main div.contact div.item div {
+  font-weight: 700;
+  font-size: 16px;
+  width: 100%;
+}
+div.applist div.page[id=联系我们] div.main div.contact div.item div.platform {
+  width: 45%;
+  text-align: right;
+  float: left;
+}
+div.applist div.page[id=联系我们] div.main div.contact div.item div.content {
+  margin-left: 8px;
+  width: 50%;
+  text-align: left;
+  float: left;
+}
+div.applist div.page[id=联系我们] div.main div.contact div.item div.content span {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.3s;
+  padding: 2px 8px 2px 8px;
+  border-radius: 4px;
+}
+div.applist div.page[id=联系我们] div.main div.contact div.item div.content span:hover {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #cecaca;
+}
+div.applist div.page[id=联系我们] div.main div.source {
+  width: 100%;
+  position: relative;
+  top: 40px;
+}
+div.applist div.page[id=联系我们] div.main div.source div.item {
+  text-align: center;
+  margin: 4px auto 4px auto;
+  height: 36px;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+div.applist div.page[id=联系我们] div.main div.source div.item a {
+  position: relative;
+  transform: translateY(-50%);
+  top: 22px;
+  display: inline-block;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.3s;
+  padding: 2px 8px 2px 8px;
+  border-radius: 4px;
+}
+div.applist div.page[id=联系我们] div.main div.source div.item a + div.content span {
+  display: inline-block;
+  margin-top: 14px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #cecaca;
+  padding: 2px 8px 2px 8px;
+  border-radius: 4px;
+}
+div.applist div.page[id=联系我们] div.main div.source div.item a:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #cecaca;
+}
+div.applist div.page[id=联系我们] div.main div.item:has(a:hover) {
+  height: 74px;
 }

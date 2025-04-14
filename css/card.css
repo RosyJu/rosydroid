@@ -86,3 +86,6 @@ div.card div.date span.time {
   color: #CECACA;
   font-size: 24px;
 }
+div.card div.specialDay {
+  width: 100%;
+}

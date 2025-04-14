@@ -7,6 +7,7 @@ body > .load {
   width: 100vw;
   height: 100vh;
   background: #e2e2e2;
+  z-index: 9999;
 }
 body > .load > #loading {
   position: fixed;

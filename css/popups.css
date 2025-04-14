@@ -13,12 +13,16 @@ div.popups {
 
 div.prompt {
   opacity: 0;
-  display: block;
+  display: grid;
+  grid-template-columns: 24px 1fr;
 }
 div.prompt div.icon {
-  width: 21px;
-  height: 21px;
+  width: 24px;
+  height: 24px;
   float: left;
+  position: relative;
+  transform: translateY(-50%);
+  top: 50%;
 }
 div.prompt div.icon svg {
   width: 100%;
@@ -38,21 +42,21 @@ div.log div.icon svg {
   fill: #00aa00;
 }
 div.log div.content {
-  color: #00aa00;
+  color: #E3D4D1;
 }
 
 div.warn div.icon svg {
   fill: #ffaa00;
 }
 div.warn div.content {
-  color: #ffaa00;
+  color: #E3D4D1;
 }
 
 div.error div.icon svg {
   fill: #ff5555;
 }
 div.error div.content {
-  color: #ff5555;
+  color: #E3D4D1;
 }
 
 @keyframes popups_prompt {

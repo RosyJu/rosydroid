@@ -1,6 +1,6 @@
 const popups = {
   prompt: {
-    animation: (dom) => {
+    animation: async (dom) => {
       dom.classList.remove("animation");
       dom.offsetHeight;
       dom.classList.add("animation");
@@ -16,27 +16,27 @@ const popups = {
       let IDpopups = document.querySelectorAll("div#popups")[0];
       let dom = document.querySelectorAll("div.popups.prompt.log")[0];
       IDpopups.appendChild(dom);
-      dom.querySelectorAll("div.content")[0].textContent = text
+      dom.querySelectorAll("div.content")[0].textContent = text;
       if (dom) {
-        popups.prompt.animation(dom)
+        popups.prompt.animation(dom);
       }
     },
     warn: async (text) => {
       let IDpopups = document.querySelectorAll("div#popups")[0];
       let dom = document.querySelectorAll("div.popups.prompt.warn")[0];
       IDpopups.appendChild(dom);
-      dom.querySelectorAll("div.content")[0].textContent = text
+      dom.querySelectorAll("div.content")[0].textContent = text;
       if (dom) {
-        popups.prompt.animation(dom)
+        popups.prompt.animation(dom);
       }
     },
     error: async (text) => {
       let IDpopups = document.querySelectorAll("div#popups")[0];
       let dom = document.querySelectorAll("div.popups.prompt.error")[0];
       IDpopups.appendChild(dom);
-      dom.querySelectorAll("div.content")[0].textContent = text
+      dom.querySelectorAll("div.content")[0].textContent = text;
       if (dom) {
-        popups.prompt.animation(dom)
+        popups.prompt.animation(dom);
       }
     },
   },
