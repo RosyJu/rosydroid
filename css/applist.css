@@ -17,12 +17,16 @@ div.applist div.page {
   margin: 40px;
   transition: margin-top 0.5s;
 }
-div.applist div.page div.title {
+div.applist div.page > div.title {
   color: #5c5c5c;
   text-align: center;
   width: 100%;
   font-size: 16px;
   font-weight: 700;
+}
+div.applist div.page div.main {
+  height: calc(100vh - 184px);
+  overflow-y: auto;
 }
 div.applist div.page[id=联系我们] div.main div.contact > div.item:first-child {
   margin-top: 40px;
@@ -98,4 +102,68 @@ div.applist div.page[id=联系我们] div.main div.source div.item a:hover {
 }
 div.applist div.page[id=联系我们] div.main div.item:has(a:hover) {
   height: 74px;
+}
+div.applist div.page[id=主界面] div.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+div.applist div.page[id=主界面] div.main div.item {
+  border-radius: 8px;
+  color: #443A3B;
+}
+div.applist div.page[id=主界面] div.main div.item div.title {
+  font-size: 16px;
+  text-align: center;
+}
+div.applist div.page[id=主界面] div.main div.item div.title div.img {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+div.applist div.page[id=主界面] div.main div.item div.title div.img img {
+  width: 16px;
+  height: 16px;
+}
+div.applist div.page[id=主界面] div.main div.item div.title span {
+  display: inline-block;
+}
+div.applist div.page[id=主界面] div.main div.calendar {
+  padding: 16px;
+  border-radius: 8px;
+  background: #ffcd68;
+}
+div.applist div.page[id=主界面] div.main div.calendar div.lunar {
+  font-size: 24px;
+  text-align: center;
+}
+div.applist div.page[id=主界面] div.main div.calendar div.ganzhi {
+  font-size: 12px;
+  grid-template-columns: 24px 1fr;
+  text-align: center;
+}
+div.applist div.page[id=主界面] div.main div.calendar div.yi, div.applist div.page[id=主界面] div.main div.calendar div.ji {
+  margin-top: 8px;
+  text-overflow: clip;
+  display: grid;
+  grid-template-columns: 24px 1fr;
+}
+div.applist div.page[id=主界面] div.main div.calendar div.yi div.icon, div.applist div.page[id=主界面] div.main div.calendar div.ji div.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border-radius: 12 px;
+  text-align: center;
+  color: #FFF;
+  position: relative;
+}
+div.applist div.page[id=主界面] div.main div.calendar div.yi div.content, div.applist div.page[id=主界面] div.main div.calendar div.ji div.content {
+  display: inline-block;
+  margin-left: 8px;
+}
+div.applist div.page[id=主界面] div.main div.calendar div.yi div.icon {
+  background-color: #DEB12D;
+}
+div.applist div.page[id=主界面] div.main div.calendar div.ji div.icon {
+  background-color: #443A3B;
 }
