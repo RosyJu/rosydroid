@@ -12,7 +12,7 @@ div.applist {
   div.page {
     height: calc(100vh - 160px);
     width: calc(100vw - 500px);
-    margin: 40px;
+    margin: 40px 40px 64px 40px;
     transition: margin-top 0.5s;
     > div.title {
       color: #5c5c5c;
@@ -22,7 +22,7 @@ div.applist {
       font-weight: 700;
     }
     div.main {
-      height: calc(100vh - 184px);
+      height: calc(100vh - 160px);
       overflow-y: auto;
     }
   }

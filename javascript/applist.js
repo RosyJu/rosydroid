@@ -10,7 +10,7 @@ const pagechange = async (dom) => {
     .querySelectorAll("div.origin span")[0]
     .textContent.replace(/\s*/g, "");
   // popups.prompt.log(`切换页面到 : ${origin}`);
-  const top = `calc(${40 + 120 * pageslist.indexOf(origin)}px - ${100 * pageslist.indexOf(origin)}vh)`;
+  const top = `calc(${16 + 96 * pageslist.indexOf(origin)}px - ${100 * pageslist.indexOf(origin)}vh)`;
   if (pagesfirst.style.marginTop == top) {
     popups.prompt.warn(`取消切换页面 : 所需页面与当前页面无变动`);
   } else {

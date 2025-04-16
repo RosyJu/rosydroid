@@ -3,7 +3,7 @@ const path = require('path');
 const sass = require('A://Node/node_modules/sass');
 
 // 设置要遍历的文件夹路径
-const inputDir = path.join(__dirname, '../scss/'); // 这里是存放 .scss 文件的文件夹
+const inputDir = path.join(__dirname, '../.scss/'); // 这里是存放 .scss 文件的文件夹
 const outputDir = path.join(__dirname, '../css/'); // 输出编译后的 CSS 文件的文件夹
 
 // 如果输出目录不存在，则创建它
